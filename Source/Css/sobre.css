@@ -1,0 +1,22 @@
+.sobre .imagem{
+    width: 40%;
+    border: 1px solid black;
+}
+.sobre .descricaoClube{
+    width: 60%;
+}
+.sobre .descricao{
+    width: 100%;
+    display: flex;
+}
+.sobre .horarios{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+.sobre .tempo h2{
+    text-align: center;
+    width: 100%;
+    line-height: 60px;
+    font-size: 24px;
+}

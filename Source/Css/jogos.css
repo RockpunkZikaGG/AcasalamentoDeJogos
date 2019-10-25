@@ -1,0 +1,13 @@
+.jogos table{
+    width: 100%;
+}
+.jogos .tabela{
+    border: solid black;
+}
+.jogos{
+    text-align: center;
+}
+.jogos p{
+    font-size: 22px;
+    font-weight: bold;  
+}

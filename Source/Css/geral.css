@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body, html{
+    height: 100%;
+    background-color: #000;
+}
+.container{
+    margin: 20px 5%;
+    padding: 20px;
+    background-color: white ;
+}

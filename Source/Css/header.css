@@ -1,0 +1,33 @@
+header .baner{
+    background-color: white;
+    height: 200px;
+}
+header nav{
+    line-height: 60px;
+    background-color: #3566f3;
+    padding: 0px 5%;
+}
+header nav a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
+    font-size: 20px;
+}
+header .baner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header .baner .LogoCDJ{
+    height: 100%;
+    width: 15%;
+    padding: 20px;
+}
+header .baner .LogoIF{
+    height: 100%;
+    padding: 20px;
+}
+header .baner .titulos{
+    margin: auto;
+    text-align: center;
+}
