@@ -31,6 +31,8 @@
                         </tr>
                         ';
                         while($row = $result->fetch_assoc()) {
+                            $row['dia']=utf8_encode($row['dia']);
+                            $row['hora']=utf8_encode($row['hora']);
                             echo '
                                 <tr>
                                     <td class = "tabela">'.$row['dia'].'</td>

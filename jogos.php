@@ -25,7 +25,7 @@
                 echo '<p>Não achamos os jogos, mas estamos procurando no Jubileu.</p><p>Recarregue a paguina para ver se ja encontramos!</p>';
             }
         }else{
-            echo '<p>Não achamos os jogos, mas estamos procurando no Jubileu.</p><p>Recarregue a paguina para ver se ja encontramos!</p>';
+            echo '<p>Perdemos os Jogos!</p><p>Socorro!</p>';
         }
             
         mysqli_free_result($result);
