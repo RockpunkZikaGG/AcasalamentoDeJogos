@@ -35,6 +35,11 @@
                         <th class = "tabela">Jogo</th>
                         <th class = "tabela">Nome</th>
                         <th class = "tabela">Descrição</th>
+                ';
+                        if(isset($_SESSION['email'])){
+                            echo '<th class = "tabela">Exluir</th>';
+                        }
+                echo'   
                     </tr>
                 ';
                 while($row = $result->fetch_assoc()) {
@@ -43,6 +48,11 @@
                             <td class = "tabela imgTb"><img class="imgJogo" src="Source/Images/Jogos/'.$row["nome"].'.png" alt=".."></td>
                             <td class = "tabela">'.$row['nome'].'</td>
                             <td class = "tabela">'.$row['descricao'].'</td>
+                    ';
+                            if(isset($_SESSION['email'])){
+                                echo '<td class = "tabela optsTd"><a href="?page=Excluir&id='.$row['idjg'].'"><img class="opts" src="Source/Images/excluir.png"/></a><a href="?page=Edit&id='.$row['idjg'].'"><img class="opts" src="Source/Images/edit.png"/></a></td>';
+                            }
+                    echo'
                         </tr>
                     ';
                 }

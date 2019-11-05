@@ -1,20 +1,13 @@
-.jogos table{
-    width: 100%;
-}
-.jogos .tabela{
-    border: solid black;
-}
-.jogos{
+.edit{
     text-align: center;
 }
-.jogos .Inf{
-    font-size: 22px;
-    font-weight: bold;
-}
-.jogos p{
+.edit table{
     width: 100%;
 }
-.jogos .EditAmd{
+.edit p{
+    width: 100%;
+}
+.edit .adm{
     border: black solid 2px;
     border-radius: 10px;
     padding: 10px 0px;
@@ -22,10 +15,10 @@
     margin:auto;
     margin-bottom: 20px;
 }
-.jogos .EditAmd .inpFile{
+.edit .adm .inpFile{
     display: none;
 }
-.jogos .EditAmd .lbFoto{
+.edit .adm .lbFoto{
     margin: auto;
     display: block;
     width: 80%;
@@ -35,10 +28,10 @@
     padding: 10px 0px;
     border-radius: 10px;
 }
-.jogos .EditAmd input{
+.edit .adm input{
     width: 80%;
 }
-.jogos .EditAmd .btn{
+.edit .adm .btn{
     width: 35%;
     border: none;
     border-radius: 10px;
@@ -47,23 +40,10 @@
     color: white;
     font-weight: bold;
 }
-.jogos .EditAmd .buttons{
+.edit .adm .buttons{
     display: flex;
     justify-content: space-around;
 }
-.jogos .EditAmd td{
+.edit .adm td{
     padding: 5px 0px;
-}
-.jogos .imgJogo{
-    width: 100%;
-}
-.jogos .imgTb{
-    width: 160px;
-}
-.jogos {
-    display: block;
-}
-.jogos .opts{
-    height: 50px;
-    width: 50px;
 }
