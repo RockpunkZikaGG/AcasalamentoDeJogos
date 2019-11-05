@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="./Source/Css/jogos.css">
     <link rel="stylesheet" type="text/css" href="./Source/Css/sobre.css">
     <link rel="stylesheet" type="text/css" href="./Source/Css/footer.css">
+    <link rel="stylesheet" type="text/css" href="./Source/Css/login.css">
+    <link rel="stylesheet" type="text/css" href="./Source/Css/fontes.css">
     <title>CDJ IFSul</title>
 </head>
 <body>
@@ -26,6 +28,15 @@
         <a href="?page=Home">Home</a>
         <a href="?page=Jogos">Jogos</a>
         <a href="?page=Noticias">Notícias</a>
-        <a href="?page=Sobre">Sobre</a>
+        <a href="?page=Sobre">Sobre</a>  
+        <?php
+          if(isset($_SESSION['email'])):
+            echo $_SESSION['email'];
+        ?>
+          <a href="?page=Logout">Deslogar</a>
+        <?php
+         endif;
+        ?>         
     </nav>
 </header>
+

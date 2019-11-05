@@ -7,10 +7,16 @@ footer p{
 }
 footer h2{
     color: white;
+    font-family: 'Big Shoulders Text', cursive;
 }
 footer img{
     height: 80px;
     width: 80px;
     filter: invert(100%);
     margin: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
 }
