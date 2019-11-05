@@ -50,11 +50,25 @@
     width: 100%;
 }
 .noticias .Nots{
-    display: flex;
+	display: flex;	
+	flex-wrap: wrap;
 }
 .noticias .Not{
-    display: flex;
+    width:32%;
+	border: 1px solid black;
+	padding: 5px;
+	margin:5px;
+	text-align:center;
 }
 .noticias .Not img{
     height: 100px;
+}
+.noticias .Not h1{
+    font-family: 'Rokkitt', serif;
+	font-size:18pt;	
+}
+
+.noticias .Not h2{
+    font-family: 'Rokkitt', serif;
+	font-size:15pt;	
 }

@@ -35,11 +35,12 @@
                 while($row = $result->fetch_assoc()) {
                     echo '
                         <div class="Not">
+						<img src="Source/Images/Noticias/'.$row['titulo'].'.png"/>
                                 <div>
-                                    <p>'.$row['titulo'].'</p>
-                                    <p>'.$row['descricao'].'</p>
+                                    <h1><p>'.$row['titulo'].'</p></h1>
+                                    <h2><p>'.$row['descricao'].'</p><h2>
                                 </div>
-                                <img src="Source/Images/Noticias/'.$row['titulo'].'.png"/>
+                                
                         </div>
                     ';
                 }
