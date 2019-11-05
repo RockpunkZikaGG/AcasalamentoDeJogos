@@ -12,7 +12,7 @@
                     ';
                 }
             }else{
-                echo '<p>Não achamos os jogos, mas estamos procurando no Jubileu.</p><p>Recarregue a paguina para ver se ja encontramos!</p>';
+                echo '<p class="err">Nosso plano de ficarmos ricos e famosos, ainda não está concluído.</p><p class="err">Volte outro dia pra ver se concluímos essa missão!</p>';
             }
         }else{
             echo '<p>Perdemos os Jogos!</p><p>Socorro!</p>';

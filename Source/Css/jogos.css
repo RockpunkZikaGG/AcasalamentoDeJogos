@@ -7,7 +7,56 @@
 .jogos{
     text-align: center;
 }
-.jogos p{
+.jogos .Inf{
     font-size: 22px;
-    font-weight: bold;  
+    font-weight: bold;
+}
+.jogos p{
+    width: 100%;
+}
+.jogos .EditAmd{
+    border: black solid 2px;
+    border-radius: 10px;
+    padding: 10px 0px;
+    max-width: 500px;
+    margin:auto;
+    margin-bottom: 20px;
+}
+.jogos .EditAmd .inpFile{
+    display: none;
+}
+.jogos .EditAmd .lbFoto{
+    margin: auto;
+    display: block;
+    width: 80%;
+    background-color: #3566f3;
+    color: white;
+    font-weight: bold;
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+.jogos .EditAmd input{
+    width: 80%;
+}
+.jogos .EditAmd .btn{
+    width: 35%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0px;
+    background-color: #3566f3;
+    color: white;
+    font-weight: bold;
+}
+.jogos .EditAmd .buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.jogos .EditAmd td{
+    padding: 5px 0px;
+}
+.jogos .imgJogo{
+    width: 100%;
+}
+.jogos .imgTb{
+    width: 160px;
 }

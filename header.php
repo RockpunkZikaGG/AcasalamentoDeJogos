@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="./Source/Css/geral.css">
     <link rel="stylesheet" type="text/css" href="./Source/Css/header.css">
     <link rel="stylesheet" type="text/css" href="./Source/Css/home.css">
+    <link rel="stylesheet" type="text/css" href="./Source/Css/noticias.css">
     <link rel="stylesheet" type="text/css" href="./Source/Css/jogos.css">
     <link rel="stylesheet" type="text/css" href="./Source/Css/sobre.css">
     <link rel="stylesheet" type="text/css" href="./Source/Css/footer.css">

@@ -47,7 +47,35 @@
                 }else{
                     echo '<p>O mundo acabou não se tem mais noção de tempo!</p>';
                 }
-                    
+                mysqli_free_result($result);
+                if ($result = mysqli_query($conn, 'SELECT * FROM horarios WHERE tipo="cp"')) {
+                    $row = mysqli_num_rows($result);
+                    if(mysqli_num_rows($result)>0){
+                        echo '
+                        <h2>Entre Cartas e Peças (quinzenal)</h2>
+                        <table class="horarios">
+                        <tr>
+                            <th>Dia da Semana</th>
+                            <th>Horário</th>
+                        </tr>
+                        ';
+                        while($row = $result->fetch_assoc()) {
+                            $row['dia']=utf8_encode($row['dia']);
+                            $row['hora']=utf8_encode($row['hora']);
+                            echo '
+                                <tr>
+                                    <td class = "tabela">'.$row['dia'].'</td>
+                                    <td class = "tabela">'.$row['hora'].'</td>
+                                </tr>
+                            ';
+                        }
+                        echo '</table>';
+                    }else{
+                        echo '<p>Estamos em uma viagem no tempo, podemos nos atrasar um pouco!</p>';
+                    }
+                }else{
+                    echo '<p>O mundo acabou não se tem mais noção de tempo!</p>';
+                }
                 mysqli_free_result($result);
                 mysqli_close($conn);
             ?>
