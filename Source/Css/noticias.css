@@ -8,3 +8,50 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.noticias .EditAmd{
+    border: black solid 2px;
+    border-radius: 10px;
+    padding: 10px 0px;
+    max-width: 500px;
+    margin:auto;
+    margin-bottom: 20px;
+}
+.noticias .EditAmd .inpFile{
+    display: none;
+}
+.noticias .EditAmd .lbFoto{
+    margin: auto;
+    display: block;
+    width: 80%;
+    background-color: #3566f3;
+    color: white;
+    font-weight: bold;
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+.noticias .EditAmd input{
+    width: 80%;
+}
+.noticias .EditAmd .btn{
+    width: 35%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0px;
+    background-color: #3566f3;
+    color: white;
+    font-weight: bold;
+}
+.noticias .EditAmd .buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.noticias .EditAmd td{
+    padding: 5px 0px;
+}
+.noticias .imgJogo{
+    width: 100%;
+}
+.noticias .imgTb{
+    width: 160px;
+}

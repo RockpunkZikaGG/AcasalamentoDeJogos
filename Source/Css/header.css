@@ -23,6 +23,13 @@ header .baner .LogoCDJ{
     width: 15%;
     padding: 20px;
 }
+
+@media screen and (max-width:900px){
+    header .baner .LogoCDJ{
+    width: 30%;
+    }
+}
+
 header .baner .LogoIF{
     height: 100%;
     padding: 20px;
@@ -33,4 +40,9 @@ header .baner .titulos{
 }
 header .baner .titulos h1{
     font-family: 'Acme', sans-serif;
+    font-size: 30pt;
+}
+
+header .baner .titulos h2{
+    font-size: 25pt;
 }
