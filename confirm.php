@@ -26,5 +26,5 @@
                 mysqli_free_result($grava);
                 mysqli_close($conn);
             }
-            echo "<meta http-equiv=refresh content='3;URL=?page=Jogos'>"
+            echo "<meta http-equiv=refresh content='3;URL=?page=Jogos'>";
 ?>

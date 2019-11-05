@@ -11,16 +11,11 @@
 	
 	if($row>0){
 		$_SESSION['email']= $email;
-		header('Location: index.php?page=Noticias');
+		echo "<meta http-equiv=refresh content='3;URL=?page=Home'>";
 	}else{
-		$_SESSION['errado'] = true;
-		header('Location: index.php?page=Home');
+		echo '<div class="container"><p>Administrador inválido</p></div>';
+		echo "<meta http-equiv=refresh content='3;URL=?page=Login'>";
 	}
-        
-        mysqli_close($conn);
-		
-	if(isset($_SESSION['errado'])):
-		echo '<p>Administrador inválido</p>';
-    endif;	
+    mysqli_close($conn);
 	
 ?>
