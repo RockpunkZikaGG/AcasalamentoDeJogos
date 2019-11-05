@@ -4,10 +4,6 @@
     font-size: 22px;
     font-weight: bold; 
 }
-.noticias{
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .noticias .EditAmd{
     border: black solid 2px;
@@ -49,9 +45,16 @@
 .noticias .EditAmd td{
     padding: 5px 0px;
 }
-.noticias .imgJogo{
+
+.noticias table{
     width: 100%;
 }
-.noticias .imgTb{
-    width: 160px;
+.noticias .Nots{
+    display: flex;
+}
+.noticias .Not{
+    display: flex;
+}
+.noticias .Not img{
+    height: 100px;
 }

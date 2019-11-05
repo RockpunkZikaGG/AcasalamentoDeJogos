@@ -31,8 +31,8 @@
         <a href="?page=Noticias">Notícias</a>
         <a href="?page=Sobre">Sobre</a>  
         <?php
+          session_start();        
           if(isset($_SESSION['email'])):
-            echo $_SESSION['email'];
         ?>
           <a href="?page=Logout">Deslogar</a>
         <?php

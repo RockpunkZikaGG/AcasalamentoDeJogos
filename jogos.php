@@ -1,6 +1,6 @@
 <div class="container jogos">
     <?php
-        if(isset($_COOKIE["CDJ_ADM"]) and $_COOKIE["CDJ_ADM"]!=""){
+        if(isset($_SESSION['email'])){
             echo '
                 <div class="EditAmd">
                     <form action="?page=Confirm" method="post" enctype="multipart/form-data">

@@ -11,9 +11,10 @@
 	
 	if($row>0){
 		$_SESSION['email']= $email;
+		echo '<div class="container"><p>Logando...</p></div>';
 		echo "<meta http-equiv=refresh content='3;URL=?page=Home'>";
 	}else{
-		echo '<div class="container"><p>Administrador inv·lido</p></div>';
+		echo '<div class="container"><p>Administrador inv√°lido</p></div>';
 		echo "<meta http-equiv=refresh content='3;URL=?page=Login'>";
 	}
     mysqli_close($conn);

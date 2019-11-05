@@ -1,19 +1,19 @@
 <div class="container noticias">
     <?php
         include('configs.php');
-        if(isset($_COOKIE["CDJ_ADM"]) and $_COOKIE["CDJ_ADM"]!=""){
+        if(isset($_SESSION['email'])){
             echo '
                 <div class="EditAmd">
                     <form action="?page=Confirm2" method="post" enctype="multipart/form-data">
                         <table>
                             <tr>
-                                <td><p>Nome:</p></td><td><input type="text" name="nome"/></td>
-                            </tr>
-                            <tr>
                                 <td><p>Título:</p></td><td><input type="text" name="titulo"/></td>
                             </tr>
                             <tr>
-                                <td><p>Descrição:</p></td><td><input type="text" name="descricao"/></td>
+                                <td><p>Subtitulo:</p></td><td><input type="text" name="descricao"/></td>
+                            </tr>
+                            <tr>
+                                <td><p>Conteudo:</p></td><td><input type="text" name="conteudo"/></td>
                             </tr>
                             <tr>
                                 <td><p>Foto:</p></td><td><input id="inpFoto" class="inpFile" type="file" name="foto" /><label class="lbFoto" for="inpFoto">SELECIONE UMA FOTO</label></td>
@@ -26,14 +26,20 @@
                     </form>
                 </div>
             ';
-        }
+        }?>
+        <div class="Nots">
+        <?php
         if ($result = mysqli_query($conn, 'SELECT * FROM noticia')) {
             $row = mysqli_num_rows($result);
             if(mysqli_num_rows($result)>0){
                 while($row = $result->fetch_assoc()) {
                     echo '
-                        <div>
-                                    
+                        <div class="Not">
+                                <div>
+                                    <p>'.$row['titulo'].'</p>
+                                    <p>'.$row['descricao'].'</p>
+                                </div>
+                                <img src="Source/Images/Noticias/'.$row['titulo'].'.png"/>
                         </div>
                     ';
                 }
@@ -47,4 +53,5 @@
         mysqli_free_result($result);
         mysqli_close($conn);
     ?>
+    </div>
 </div>
