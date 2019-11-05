@@ -2,10 +2,8 @@
 <body>
 <?php
 	//setcookie("usuario");
-    
-	echo "Cookie apagado!!";
 	setcookie("usuario", "", time() - 120);
-
+	echo "Cookie apagado!!";
 ?>
 </body>
 </html>

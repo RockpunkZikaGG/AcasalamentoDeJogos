@@ -1,0 +1,10 @@
+.noticias .err{
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold; 
+}
+.noticias{
+    display: flex;
+    flex-wrap: wrap;
+}
