@@ -11,9 +11,6 @@
     font-size: 22px;
     font-weight: bold;
 }
-.jogos p{
-    width: 100%;
-}
 .jogos .EditAmd{
     border: black solid 2px;
     border-radius: 10px;
@@ -55,10 +52,12 @@
     padding: 5px 0px;
 }
 .jogos .imgJogo{
-    width: 100%;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
 }
-.jogos .imgTb{
-    width: 160px;
+.jogos .nome{
+    width: 120px;
 }
 .jogos {
     display: block;

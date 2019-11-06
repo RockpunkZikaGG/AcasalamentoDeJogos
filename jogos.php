@@ -37,7 +37,7 @@
                         <th class = "tabela">Descrição</th>
                 ';
                         if(isset($_SESSION['email'])){
-                            echo '<th class = "tabela">Exluir</th>';
+                            echo '<th class = "tabela">Opções</th>';
                         }
                 echo'   
                     </tr>
@@ -45,8 +45,8 @@
                 while($row = $result->fetch_assoc()) {
                     echo '
                         <tr>
-                            <td class = "tabela imgTb"><img class="imgJogo" src="Source/Images/Jogos/'.$row["nome"].'.png" alt=".."></td>
-                            <td class = "tabela">'.$row['nome'].'</td>
+                            <td class = "tabela"><img class="imgJogo" src="Source/Images/Jogos/'.$row["idjg"].'.png" alt=".."></td>
+                            <td class = "tabela nome">'.$row['nome'].'</td>
                             <td class = "tabela">'.$row['descricao'].'</td>
                     ';
                             if(isset($_SESSION['email'])){

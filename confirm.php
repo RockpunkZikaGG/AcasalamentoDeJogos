@@ -1,5 +1,5 @@
 <div class="container">
-    <h2>Registrado com sucesso!</h2>
+    <h2>Registrando...</h2>
 </div>
 <?php
             $nome=isset($_POST['nome'])?$_POST['nome']:null;
@@ -9,6 +9,7 @@
                 include('configs.php'); 
                 $grava=mysqli_query($conn,"insert into jogo
                 (idjg, descricao, nome)values( null,'$descricao','$nome')");
+                $id=mysqli_insert_id($conn);
                 if(isset($_FILES['foto']) && $_FILES['foto']['size'] > 0){
                      if(is_uploaded_file($_FILES['foto']['tmp_name'])){  
                              
@@ -18,7 +19,7 @@
                           }
 
                           // Essa função move_uploaded_file() copia e verifica se o arquivo enviado foi copiado com sucesso para o destino  
-                          if (!move_uploaded_file($_FILES['foto']['tmp_name'], 'Source/Images/Jogos/'.$nome.'.png')){  
+                          if (!move_uploaded_file($_FILES['foto']['tmp_name'], 'Source/Images/Jogos/'.$id.'.png')){  
                                echo "Houve um erro ao gravar arquivo na pasta de destino!";  
                           }
                     } 
