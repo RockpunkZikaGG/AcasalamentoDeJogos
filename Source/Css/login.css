@@ -5,10 +5,23 @@
 
 .login p{
     padding: 5px 0px;
-    text-align: left;
-    margin-left: 10%;
+    text-align: center;
 }
-
+.login input{
+    width: 30%;
+    min-width: 280px;
+    margin-left: 10px;
+}
+.login .btn{
+    width: 15%;
+    min-width: 150px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 0px;
+    background-color: #3566f3;
+    color: white;
+    font-weight: bold;
+}
 .login legend{
     font-family: 'Rokkitt', serif;
     font-size: 24pt;
