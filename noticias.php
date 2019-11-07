@@ -16,6 +16,9 @@
                                 <td><p>Conteudo:</p></td><td><input type="text" name="conteudo"/></td>
                             </tr>
                             <tr>
+                                <td><p>URL:</p></td><td><input type="text" name="URL"/></td>
+                            </tr>
+                            <tr>
                                 <td><p>Foto:</p></td><td><input id="inpFoto" class="inpFile" type="file" name="foto" /><label class="lbFoto" for="inpFoto">SELECIONE UMA FOTO</label></td>
                             </tr>
                         </table>
@@ -33,8 +36,20 @@
             $row = mysqli_num_rows($result);
             if(mysqli_num_rows($result)>0){
                 while($row = $result->fetch_assoc()) {
+                    if(!empty(.$row['URL']){
+                        echo '
+                        <a href='.$row["URL"]' target="_blank" title='.$row["titulo"]'><div class="Not row">
+						<img src="Source/Images/Noticias/'.$row['titulo'].'.png"/>
+                                <div>
+                                    <h1><p>'.$row['titulo'].'</p></h1>
+                                    <h2><p>'.$row['descricao'].'</p><h2>
+                                </div>
+                                
+                        </div></a>
+                    ';
+                    }else{
                     echo '
-                        <div class="Not">
+                        <div class="Not row">
 						<img src="Source/Images/Noticias/'.$row['titulo'].'.png"/>
                                 <div>
                                     <h1><p>'.$row['titulo'].'</p></h1>
@@ -43,6 +58,7 @@
                                 
                         </div>
                     ';
+                    }
                 }
             }else{
                 echo '<p class="err">Nosso plano de ficarmos ricos e famosos, ainda não está concluído.</p><p class="err">Volte outro dia pra ver se concluímos essa missão!</p>';
